@@ -1,0 +1,20 @@
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    margin: 10px;
+    text-decoration: none;
+    color: crimson;
+    transition: .4s;
+}
+
+.link:hover {
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 1px;
+    background-color: crimson;
+    color: bisque;
+    transition: .4s;
+}

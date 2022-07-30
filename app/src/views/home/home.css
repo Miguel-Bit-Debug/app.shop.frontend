@@ -1,0 +1,28 @@
+.produtos {
+    width: 100%;
+}
+
+.produto {
+    margin: 10px;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.produto p {
+    text-align: center;
+}
+
+.produto button {
+    border: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.produto button:hover {
+    cursor: pointer;
+    background-color: crimson;
+    color: bisque;
+}
+

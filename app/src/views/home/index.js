@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "../../components/navbar";
 import BuscarTodosProdutos from "../../services/produto/listarProdutosService";
+import './home.css'
 
 export default function Home() {
 
@@ -9,20 +11,23 @@ export default function Home() {
         BuscarTodosProdutos(setData)
     }, [data])
 
-    return(
+    return (
         <>
-        <div>
-            {data.map(produto => (
-                <div key={produto._id}>
-                    <p>{produto.nome}</p>
-                    <p>{produto.descricao}</p>
-                    <p>{produto.valor}</p>
-                    <p>{produto.createdAt}</p>
-                    <button>Comprar</button>
-                </div>
-            ))}
-        </div>
-        
+        <Navbar />
+            <div className="produtos">
+                {data.map(produto => (
+                    <div className="produto">
+                        <div key={produto._id}>
+                            <p>Produto: {produto.nome}</p>
+                            <p>Descrição: {produto.descricao}</p>
+                            <p>Valor: {produto.valor}</p>
+                            <p>Criado em: {produto.createdAt}</p>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
         </>
     )
 }
