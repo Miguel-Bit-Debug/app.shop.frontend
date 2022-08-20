@@ -1,0 +1,34 @@
+.adicionar-produto-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.adicionar-produto-container input {
+    margin: 5px;
+    width: 50%;
+    height: 25px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.botao-adicionar-produto {
+    text-decoration: none;
+    margin: 10px;
+    background-color: crimson;
+    color: bisque;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.botao-adicionar-produto:hover {
+    background-color: bisque;
+    color: crimson;
+}
