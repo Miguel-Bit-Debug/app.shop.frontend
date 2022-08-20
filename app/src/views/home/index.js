@@ -16,14 +16,13 @@ export default function Home() {
         <Navbar />
             <div className="produtos">
                 {data.map(produto => (
-                    <div className="produto">
-                        <div key={produto._id}>
+                    <div className="produto" key={produto._id}>
                             <p>Produto: {produto.nome}</p>
                             <p>Descrição: {produto.descricao}</p>
                             <p>Valor: {produto.valor}</p>
                             <p>Criado em: {produto.createdAt}</p>
                             <button>Comprar</button>
-                        </div>
+                            <button>Detalhes</button>
                     </div>
                 ))}
             </div>
